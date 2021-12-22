@@ -1,0 +1,41 @@
+syntax = "proto3";
+package v1;
+
+import "google/protobuf/timestamp.proto";
+
+enum PlacedBetStatus {
+    PLACED_BET_STATUS_UNDEFINED = 0;
+    PLACED_BET_STATUS_PENDING = 1;
+    PLACED_BET_STATUS_PAID_OUT = 3;
+    PLACED_BET_STATUS_BUSTED = 4;
+}
+
+
+message User {
+    string id = 1;
+    string walletAddress = 2;
+    string name = 3;
+    google.protobuf.Timestamp created_at = 4;
+    google.protobuf.Timestamp modified_at = 5;
+    bool trash = 6;
+}
+
+message Bet {
+    string id = 1;
+    google.protobuf.Timestamp created_at = 2;
+    google.protobuf.Timestamp modified_at = 3;
+    bool trash = 4;
+    float multiplier = 5;
+
+}
+
+message PlacedBet {
+    string id = 1;
+    google.protobuf.Timestamp created_at = 2;
+    google.protobuf.Timestamp modified_at = 3;
+    bool trash = 4;
+    string user_id = 5;      //foreign key on user table
+    string bet_id = 6;       //foreign key on bet table
+    PlacedBetStatus placedBetStatus = 7;
+    float payoutMultiplier = 8;
+}

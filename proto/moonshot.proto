@@ -38,4 +38,5 @@ message PlacedBet {
     string bet_id = 6;       //foreign key on bet table
     PlacedBetStatus placedBetStatus = 7;
     float payoutMultiplier = 8;
+    float amount = 9;
 }

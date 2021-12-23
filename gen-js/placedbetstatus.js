@@ -11,12 +11,12 @@
 /* eslint-disable */
 // @ts-nocheck
 
-goog.provide('proto.v1.PlacedBetStatus');
+goog.provide('proto.divvy.moonshot_common.v1.PlacedBetStatus');
 
 /**
  * @enum {number}
  */
-proto.v1.PlacedBetStatus = {
+proto.divvy.moonshot_common.v1.PlacedBetStatus = {
   PLACED_BET_STATUS_UNDEFINED: 0,
   PLACED_BET_STATUS_PENDING: 1,
   PLACED_BET_STATUS_PAID_OUT: 3,

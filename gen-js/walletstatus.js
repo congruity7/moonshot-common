@@ -11,12 +11,12 @@
 /* eslint-disable */
 // @ts-nocheck
 
-goog.provide('proto.v1.WalletStatus');
+goog.provide('proto.divvy.moonshot_common.v1.WalletStatus');
 
 /**
  * @enum {number}
  */
-proto.v1.WalletStatus = {
+proto.divvy.moonshot_common.v1.WalletStatus = {
   WALLET_STATUS_UNDEFINED: 0,
   WALLET_STATUS_CONNECTED: 1,
   WALLET_STATUS_DISCONNECTED: 2

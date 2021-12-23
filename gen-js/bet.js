@@ -11,7 +11,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-goog.provide('proto.v1.Bet');
+goog.provide('proto.divvy.moonshot_common.v1.Bet');
 
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
@@ -28,16 +28,16 @@ goog.require('proto.google.protobuf.Timestamp');
  * @extends {jspb.Message}
  * @constructor
  */
-proto.v1.Bet = function(opt_data) {
+proto.divvy.moonshot_common.v1.Bet = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.v1.Bet, jspb.Message);
+goog.inherits(proto.divvy.moonshot_common.v1.Bet, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.v1.Bet.displayName = 'proto.v1.Bet';
+  proto.divvy.moonshot_common.v1.Bet.displayName = 'proto.divvy.moonshot_common.v1.Bet';
 }
 
 
@@ -55,8 +55,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.v1.Bet.prototype.toObject = function(opt_includeInstance) {
-  return proto.v1.Bet.toObject(opt_includeInstance, this);
+proto.divvy.moonshot_common.v1.Bet.prototype.toObject = function(opt_includeInstance) {
+  return proto.divvy.moonshot_common.v1.Bet.toObject(opt_includeInstance, this);
 };
 
 
@@ -65,11 +65,11 @@ proto.v1.Bet.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.v1.Bet} msg The msg instance to transform.
+ * @param {!proto.divvy.moonshot_common.v1.Bet} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.v1.Bet.toObject = function(includeInstance, msg) {
+proto.divvy.moonshot_common.v1.Bet.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, ""),
     createdAt: (f = msg.getCreatedAt()) && proto.google.protobuf.Timestamp.toObject(includeInstance, f),
@@ -89,23 +89,23 @@ proto.v1.Bet.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.v1.Bet}
+ * @return {!proto.divvy.moonshot_common.v1.Bet}
  */
-proto.v1.Bet.deserializeBinary = function(bytes) {
+proto.divvy.moonshot_common.v1.Bet.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.v1.Bet;
-  return proto.v1.Bet.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.divvy.moonshot_common.v1.Bet;
+  return proto.divvy.moonshot_common.v1.Bet.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.v1.Bet} msg The message object to deserialize into.
+ * @param {!proto.divvy.moonshot_common.v1.Bet} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.v1.Bet}
+ * @return {!proto.divvy.moonshot_common.v1.Bet}
  */
-proto.v1.Bet.deserializeBinaryFromReader = function(msg, reader) {
+proto.divvy.moonshot_common.v1.Bet.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -147,9 +147,9 @@ proto.v1.Bet.deserializeBinaryFromReader = function(msg, reader) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.v1.Bet.prototype.serializeBinary = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.v1.Bet.serializeBinaryToWriter(this, writer);
+  proto.divvy.moonshot_common.v1.Bet.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -157,11 +157,11 @@ proto.v1.Bet.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.v1.Bet} message
+ * @param {!proto.divvy.moonshot_common.v1.Bet} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.v1.Bet.serializeBinaryToWriter = function(message, writer) {
+proto.divvy.moonshot_common.v1.Bet.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f.length > 0) {
@@ -207,16 +207,16 @@ proto.v1.Bet.serializeBinaryToWriter = function(message, writer) {
  * optional string id = 1;
  * @return {string}
  */
-proto.v1.Bet.prototype.getId = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.getId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.v1.Bet} returns this
+ * @return {!proto.divvy.moonshot_common.v1.Bet} returns this
  */
-proto.v1.Bet.prototype.setId = function(value) {
+proto.divvy.moonshot_common.v1.Bet.prototype.setId = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -225,7 +225,7 @@ proto.v1.Bet.prototype.setId = function(value) {
  * optional google.protobuf.Timestamp created_at = 2;
  * @return {?proto.google.protobuf.Timestamp}
  */
-proto.v1.Bet.prototype.getCreatedAt = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.getCreatedAt = function() {
   return /** @type{?proto.google.protobuf.Timestamp} */ (
     jspb.Message.getWrapperField(this, proto.google.protobuf.Timestamp, 2));
 };
@@ -233,18 +233,18 @@ proto.v1.Bet.prototype.getCreatedAt = function() {
 
 /**
  * @param {?proto.google.protobuf.Timestamp|undefined} value
- * @return {!proto.v1.Bet} returns this
+ * @return {!proto.divvy.moonshot_common.v1.Bet} returns this
 */
-proto.v1.Bet.prototype.setCreatedAt = function(value) {
+proto.divvy.moonshot_common.v1.Bet.prototype.setCreatedAt = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.v1.Bet} returns this
+ * @return {!proto.divvy.moonshot_common.v1.Bet} returns this
  */
-proto.v1.Bet.prototype.clearCreatedAt = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.clearCreatedAt = function() {
   return this.setCreatedAt(undefined);
 };
 
@@ -253,7 +253,7 @@ proto.v1.Bet.prototype.clearCreatedAt = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.v1.Bet.prototype.hasCreatedAt = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.hasCreatedAt = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -262,7 +262,7 @@ proto.v1.Bet.prototype.hasCreatedAt = function() {
  * optional google.protobuf.Timestamp modified_at = 3;
  * @return {?proto.google.protobuf.Timestamp}
  */
-proto.v1.Bet.prototype.getModifiedAt = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.getModifiedAt = function() {
   return /** @type{?proto.google.protobuf.Timestamp} */ (
     jspb.Message.getWrapperField(this, proto.google.protobuf.Timestamp, 3));
 };
@@ -270,18 +270,18 @@ proto.v1.Bet.prototype.getModifiedAt = function() {
 
 /**
  * @param {?proto.google.protobuf.Timestamp|undefined} value
- * @return {!proto.v1.Bet} returns this
+ * @return {!proto.divvy.moonshot_common.v1.Bet} returns this
 */
-proto.v1.Bet.prototype.setModifiedAt = function(value) {
+proto.divvy.moonshot_common.v1.Bet.prototype.setModifiedAt = function(value) {
   return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.v1.Bet} returns this
+ * @return {!proto.divvy.moonshot_common.v1.Bet} returns this
  */
-proto.v1.Bet.prototype.clearModifiedAt = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.clearModifiedAt = function() {
   return this.setModifiedAt(undefined);
 };
 
@@ -290,7 +290,7 @@ proto.v1.Bet.prototype.clearModifiedAt = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.v1.Bet.prototype.hasModifiedAt = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.hasModifiedAt = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -299,16 +299,16 @@ proto.v1.Bet.prototype.hasModifiedAt = function() {
  * optional bool trash = 4;
  * @return {boolean}
  */
-proto.v1.Bet.prototype.getTrash = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.getTrash = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.v1.Bet} returns this
+ * @return {!proto.divvy.moonshot_common.v1.Bet} returns this
  */
-proto.v1.Bet.prototype.setTrash = function(value) {
+proto.divvy.moonshot_common.v1.Bet.prototype.setTrash = function(value) {
   return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
@@ -317,16 +317,16 @@ proto.v1.Bet.prototype.setTrash = function(value) {
  * optional float multiplier = 5;
  * @return {number}
  */
-proto.v1.Bet.prototype.getMultiplier = function() {
+proto.divvy.moonshot_common.v1.Bet.prototype.getMultiplier = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 5, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.v1.Bet} returns this
+ * @return {!proto.divvy.moonshot_common.v1.Bet} returns this
  */
-proto.v1.Bet.prototype.setMultiplier = function(value) {
+proto.divvy.moonshot_common.v1.Bet.prototype.setMultiplier = function(value) {
   return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
